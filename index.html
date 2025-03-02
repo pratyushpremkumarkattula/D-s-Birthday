@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday My Love</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: url('https://source.unsplash.com/1600x900/?night,stars') no-repeat center center fixed;
+            background-size: cover;
+            color: white;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        .container {
+            position: relative;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        h1 {
+            font-size: 3em;
+        }
+        .message {
+            font-size: 1.5em;
+            margin: 20px;
+            cursor: pointer;
+            padding: 10px;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 10px;
+        }
+        .hidden {
+            display: none;
+        }
+        .photo-gallery {
+            margin-top: 20px;
+        }
+        .photo-gallery img {
+            width: 200px;
+            height: auto;
+            border-radius: 10px;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Happy Birthday, My Love! 🎉</h1>
+        <div class="message" onclick="revealMessage()">Click to Reveal a Special Message</div>
+        <p id="hiddenMessage" class="hidden">You are the most beautiful star in my sky. Wishing you endless joy and happiness! 💖</p>
+        <div class="photo-gallery">
+            <h2>Memories</h2>
+            <img src="her_photo1.jpg" alt="Her Photo 1">
+            <img src="her_photo2.jpg" alt="Her Photo 2">
+            <img src="her_photo3.jpg" alt="Her Photo 3">
+        </div>
+    </div>
+    <audio autoplay loop>
+        <source src="background-music.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+    <script>
+        function revealMessage() {
+            document.getElementById("hiddenMessage").classList.remove("hidden");
+        }
+    </script>
+</body>
+</html>
